@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning d3.js</title>
+	<script src="https://d3js.org/d3.v5.min.js"
+	charset="utf-8"></script>
+	<style type="text/css">
+		.big{
+			font-size:28px;
+		}
+	</style>
+
+</head>
+<body>
+	<ul class="items">
+		<li>This is an Item</li>
+		<li>This is an Item</li>
+		<li>This is an Item</li>
+		<li>This is an Item</li>
+		<li>This is an Item</li>
+	</ul>
+
+	<script type="text/javascript">
+		d3.select('li:nth-child(even)').style('color', 'red')
+		.html("This is an even number")
+		.classed('big', true);
+	</script>
+
+</body>
+</html>
